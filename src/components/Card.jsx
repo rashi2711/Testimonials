@@ -1,9 +1,10 @@
 import React from 'react';
-import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
+import { FaQuoteLeft, FaQuoteRight} from 'react-icons/fa';
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
 const Card = ({ review }) => {
   return (
-    <div className='w-[500px] bg-white p-8 rounded-lg shadow-lg relative overflow-visible flex flex-col md:relative'>
+    <div className='w-[600px]  bg-white p-8 rounded-lg relative overflow-visible flex flex-col md:relative'>
       
       <div className='absolute -top-12 left-4 z-[10]'>
       <div className='w-24 h-24 rounded-full bg-purple-500 absolute top-[-2px] z-[-10] 
@@ -18,7 +19,7 @@ const Card = ({ review }) => {
 
       <div className='mt-1 ml-2'>
         <h2 className='text-2xl font-bold'>{review.name}</h2>
-        <p className='text-sm text-gray-500 uppercase'>{review.company}</p>
+        <p className='text-sm text-purple-400 uppercase'>{review.company}</p>
       </div>
 
       <div className='mt-10 text-gray-700 flex flex-col items-center'>
