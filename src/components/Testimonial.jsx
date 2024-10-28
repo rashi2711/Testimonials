@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Card from './Card';
 
-const Testimonial = (props) => {
-  let reviews=props.reviews
+const Testimonial = ({ reviews }) => {
   return (
-    <div><Card reviews={reviews[0]}></Card></div>
-  )
-}
+    <div className='flex flex-wrap justify-center mt-5'>
+      {reviews.length > 0 && <Card review={reviews[0]} />}
+    </div>
+  );
+};
 
-export default Testimonial
+export default Testimonial;
